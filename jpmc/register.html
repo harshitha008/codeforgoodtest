@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Registration Page</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+<script>
+    $(document).ready(function(){
+        $("#date").datepicker({
+            changeMonth:true,
+            changeYear:true,
+            yearRange: 'c-99:c-18'});
+    });
+</script>
+        <style>
+    * {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #F8F8FF;
+  background-size: cover;
+  background-image: url("images/ablur.jpg");
+}
+
+.header {
+  width: 30%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  border-radius: 0px 0px 10px 10px;
+  background:rgba(17,17,17,0.5);
+}
+.radio{
+    margin: 10px 0px 10px 0px;
+}
+.radio label{
+  margin: 0px;
+  color: white;
+}
+.radio input {
+  height: 20px;
+  width: 10%;
+  padding: 2px 5px;
+  font-size: 20px;
+}
+.dob{
+    margin: 10px 0px 10px 0px;
+}
+.dob input {
+  height: 30px;
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+.place{
+    margin: 10px 0px 10px 0px;
+}
+.place input {
+  height: 30px;
+  width: 90%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+  color: white;
+}
+.input-group input {
+  height: 30px;
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.input-group span{
+  color: red;
+  font-weight: 200;  
+}
+.term{
+    margin: 10px 0px 10px 0px;
+}
+.term label{
+  margin: 0px;
+  color: white;
+}
+.term input{
+  height: 20px;
+  width: 5%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: white;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+
+</style>
+    </head>
+    <body>
+        <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+        <form method="post" action="register" onsubmit="return validate()" autocomplete="off">
+  	<div class="input-group">
+            <i class="material-icons" style="color:white">perm_identity</i>
+          <input type="text" name="fullname" placeholder="Fullname" pattern="[A-Za-z\s]{4,25}" 
+                title="FullName must contain:Only alphabets,length must be between 4 and 25" required>
+      	</div>
+  	<div class="input-group">
+            <i class="material-icons" style="color:white">email</i>
+          <input type="email" name="email" placeholder="Email" pattern="^(.+)@(.+)(\.com)$" 
+                title="Please Enter valid mail" required>
+  	</div>
+        <div class="input-group">
+            <i class="material-icons" style="color:white">call</i>
+          <input type="text" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}"
+                title="Mobile Number should only contain digits of length 10" required>
+  	</div>
+            <div class="radio">
+                <i class="material-icons" style="color:white">person_outline</i>
+  		<input type="radio" name="gender" value="Male" ><label>Male</label>
+                <input type="radio" name="gender" value="Female"><label>Female</label>
+                <input type="radio" name="gender" value="Others"><label>Others</label>               
+            </div>
+            <div class="dob">
+                <i class="material-icons" style="color:white">date_range</i>
+                <input type="text" id="date" name="dob" placeholder="DOB" required>
+                </div>
+            <div class="place">
+               <i class="material-icons" style="color:white">place</i><input type="text" name="city" placeholder="City" required><br>
+                <i class="material-icons" style="color:white">place</i><input type="text" name="state" placeholder="State" required><br>
+                <i class="material-icons" style="color:white">place</i><input type="text" name="country" placeholder="Country" required><br>
+           </div> 
+  	<div class="input-group">
+            <i class="material-icons" style="color:white">lock_open</i>
+            <input type="password" name="password_1" placeholder="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$"
+                title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" required>
+  	</div>
+  	<div class="input-group">
+            <i class="material-icons" style="color:white">lock_open</i>
+          <input type="password" name="password_2" placeholder="Confirm Password" required>
+  	</div>
+            
+            <div class="term" style="color:white">
+                <label><a href="terms.jsp" style="color:white">By Signing Up,I agree to the Terms of Service</a></label>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn" id="submit" name="reg_user" >Register</button>
+  	</div>
+            <p style="color: white">
+            Already a member? <a href="new_login.jsp" style="color: #4db8ff">Sign in</a>
+  	</p>
+  </form>
+        
+        <script type="text/javascript">
+            function validate()
+            {
+ 
+            var pass=document.getElementsByName('password_1').value;
+            var conpass=document.getElementsByName('password_2').value;
+            conpass.setCustomValidity("");
+            if(pass!=conpass)
+            {
+                conpass.setCustomValidity("Passwords do not match");
+                return false;
+            }
+            }
+            
+            </script>
+                
+           
+           
+    </body>
+</html>
