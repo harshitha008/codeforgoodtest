@@ -5,5 +5,6 @@ class Students(models.Model):
     f_name = models.CharField(max_length=100)
     l_name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
+    image = models.FileField(null=True,blank=True)
 class Meta:
     db_table= 'students'
