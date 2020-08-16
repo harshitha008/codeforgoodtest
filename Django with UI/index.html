@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'Header.html' %}
+{% load static %}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+{% block content%}
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img" style="background-image: url({% static 'img/bg-img/bg-1.jpeg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Welcome to VJTI</h2>
+                                <h4 style="color: white;font-display: bold;">  Veermata Jijabai Technological Institute (VJTI) is an engineering college located in Mumbai, Maharashtra, India, and one of the oldest engineering colleges in Asia. Founded in 1887 and formerly known as the Victoria Jubilee Technical Institute, it adopted its present name on January 26, 1997.VJTI is an academically and administratively autonomous institute, however it is affiliated to the University of Mumbai. The institute is financially supported by the Government of Maharashtra.
+
+                                </h4>
+                                <a href="https://en.wikipedia.org/wiki/Veermata_Jijabai_Technological_Institute" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Slide--> 
+            <div class="single-hero-slide bg-img" style="background-image: url({% static 'img/bg-img/bg-2.jpeg' %});">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="400ms">Welcome to VJTI</h2>
+                                <h4 style="color: white; font-display: bold;"> After being awarded academic and administrative autonomy in 2004, VJTI became operational under the administration of a Board of Governors. VJTI is also the Central Technical Institute of Maharashtra State. The institute trains students in engineering and technology at the certificate, diploma, degree, post-graduate and doctoral levels.
+                                </h4>
+                                <a href="https://en.wikipedia.org/wiki/Veermata_Jijabai_Technological_Institute" class="btn academy-btn" data-animation="fadeInUp" data-delay="700ms">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### Top Feature Area Start ##### -->
+    <div class="top-features-area wow fadeInUp" data-wow-delay="300ms">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="features-content">
+                        <div class="row no-gutters">
+                            <!-- Single Top Features -->
+                            <div class="col-12 col-md-4">
+                                <div class="single-top-features d-flex align-items-center justify-content-center">
+                                    <h5>Learn</h5>
+                                </div>
+                            </div>
+                            <!-- Single Top Features -->
+                            <div class="col-12 col-md-4">
+                                <div class="single-top-features d-flex align-items-center justify-content-center">
+                                    <h5>Embrace</h5>
+                                </div>
+                            </div>
+                            <!-- Single Top Features -->
+                            <div class="col-12 col-md-4">
+                                <div class="single-top-features d-flex align-items-center justify-content-center">
+                                <h5>Explore</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Top Feature Area End ##### -->
+ <!-- begining of director's desk -->
+    <p style="text-align:center;margin-top: 30px;font-size: 30px;font-weight: bold; cursive;color: black
+    ;">Director's Desk</p>
+    <table >
+        <tr>
+        <td><img src="{%static 'img\dhiren_patel.jpg' %}" height="500" width="300" style="margin-left: 200px;margin-top: 70px;"></td>
+    <td style="text-align: center;padding-right: 300px;padding-left: 300px;font-weight: bold;font-family: 'Roboto', sans-serif;font-size: 23px;color: grey;
+        ">VJTI Mumbai has pioneered India's Engineering and Technology education, research and training (Since 1887). VJTI Mumbai is the preferred institute for talented students who want to stay one step ahead, who want to learn and grow, who want to make an impact, who want to work on interesting problems using technology for better society, stronger economy and safe environment.
+
+           <br> Let us join hands and support VJTI in its quest for excellence!!
+            </td>
+        </tr>
+    </table>
+    <!-- end of director's desk -->
+<p style="text-align:center;margin-top: 30px;font-size: 30px;font-weight: bold;color: black
+    ;">Departments</p>
+
+    <!-- ##### Course Area Start ##### -->
+    <div class="academy-courses-area section-padding-100-0">
+        <div class="container">
+                <div class="row">
+                        <!-- Single Course Area -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="course-icon">
+                                    <i class="fas fa-city"></i>
+                                </div>
+                                <div class="course-content">
+                                    <a href="department/3"><h4>Civil Engineering</h4></a>
+                                    <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Course Area -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="400ms">
+                                <div class="course-icon">
+                                    <i class="fa fa-desktop"></i>
+                                </div>
+                                <div class="course-content">
+                                    <a href="department/1"><h4>Computer Engineering</h4></a>
+                                    <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Course Area -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                <div class="course-icon">
+                                    <i class="fa fa-lightbulb-o"></i>
+                                </div>
+                                <div class="course-content">
+                                    <a href="department/4"><h4>Electrical engineering</h4></a>
+                                    <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Course Area -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="600ms">
+                                <div class="course-icon">
+                                    <i class="fa fa-calendar-o"></i>
+                                </div>
+                                <div class="course-content">
+                                    <a href="department/5"><h4>Electrical and Telecommunication</h4></a>
+                                    <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Course Area -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="700ms">
+                                <div class="course-icon">
+                                    <i class="fa fa-plug"></i>
+                                </div>
+                                <div class="course-content">
+                                    <a href="department/5"><h4>Electronics</h4></a>
+                                    <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Course Area -->
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="800ms">
+                                <div class="course-icon">
+                                        <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="course-content">
+                                    <a href="department/14"><h4>Information Technology</h4></a>
+                                    <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row">
+                <!-- Single Course Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="course-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="course-content">
+                            <a href="department/7"><h4>Mechanical Engineering</h4></a>
+                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Course Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="course-icon">
+                                <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="course-content">
+                            <a href="department/5"><h4>Production Engineering</h4></a>
+                            <p>Lacinia, lacinia la cus non, fermen tum nisi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Course Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-course-area d-flex align-items-center mb-100 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="course-icon">
+                                <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="course-content">
+                            <a href="department/12"><h4>Textile Engineering</h4></a>
+                            <p>Cras vitae turpis lacinia, lacinia la cus non, fermentum nisi.</p>
+                        </div>
+                    </div>
+                </div>
+                          </div>
+        </div>
+    </div>
+    
+    <!-- ##### Course Area End ##### -->
+
+    <!-- ##### Testimonials Area Start ##### -->
+    <div class="testimonials-area section-padding-100 bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/bg-2.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center mx-auto white wow fadeInUp" data-wow-delay="300ms">
+                        <h3>Student feedback</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Testimonials Area -->
+                <div class="col-12 col-md-6">
+                    <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="400ms">
+                        <div class="testimonial-thumb">
+                            <img src="{% static 'img/bg-img/t1.jpg' %}" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h5>Great teachers</h5>
+                            <p>A lot of opportunities are available.
+                                    Studying with the top students of Maharashtra is wonderful.
+                                    The exposure to different fields is tremendous. You will observe that the people around you are doing different things in different fields.
+                                    You don't need any motivation. You are bound to flourish here as everyone around you is engrossed in something or the other.
+                               </p>
+                            <h6><span>Nita Ambani,</span> Student</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Testimonials Area -->
+                <div class="col-12 col-md-6">
+                    <div class="single-testimonial-area mb-100 d-flex wow fadeInUp" data-wow-delay="500ms">
+                        <div class="testimonial-thumb">
+                            <img src="{% static 'img/bg-img/t2.jpg' %}" alt="">
+                        </div>
+                        <div class="testimonial-content">
+                            <h5>Best Teachers</h5>
+                            <p>VJTI is best for placements., studying and most importantly it is popular for its faculty. here teachers main aim is not limited to dissemination of 'information' but also to ensure the (emotional, social and moral) formation of a student. self empowered teacher is capable of improving not only the quality of education but also the quality of education. college life is enjoyable along with studies.
+                               </p>
+                            <h6><span>Prathamesh Patil,</span> Student</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-12">
+                    <div class="load-more-btn text-center wow fadeInUp" data-wow-delay="800ms">
+                        <a href="{% static '#' %}" class="btn academy-btn">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- Single Top Popular Course -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="popular-course-content">
+                            <h5>Technovanza</h5>
+                            <span>Technical Committee</span>
+                            <p>Technovanza is the 3-day national-level annual techno-management festival of VJTI, organized by the students on non-profit basis. It consists of competitions, exhibitions, workshops and seminars on robotics, programming and other technical competitions.The festival is considered the largest techno-management festival in Maharashtra and one of the largest in Asia.
+</p>
+                            <a href="{% static 'https://www.technovanza.org/' %}" class="btn academy-btn btn-sm">See More</a>
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url({% static 'img/bg-img/pc-2.jpg' %});"></div>
+                    </div>
+                </div>
+
+                <!-- Single Top Popular Course -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="popular-course-content">
+                            <h5>Pratibimb</h5>
+                            <span>Cultural Committee</span>
+                            <p>Pratibimb is the four-day national-level annual cultural festival of VJTI, organized under the aegis of the VJTI Cultural Group. It consists of one day devoted to intra-college (i.e. inter-departmental) competitions, termed as 'Illuminati'; while the other three days consist of events, competitions, workshops and entertainment programs that are open to students of all colleges.
+</p>
+                            <a href="https://www.facebook.com/pratibimbvjti/" class="btn academy-btn btn-sm">See More</a>
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url({% static 'img/bg-img/pc-2.jpg' %});"></div>
+                    </div>
+                </div>
+
+                <!-- Single Top Popular Course -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="popular-course-content">
+                            <h5>Enthusia</h5>
+                            <span>Sports Committee</span>
+                            <p>Enthusia is the national-level annual sports festival of VJTI, organized under the aegis of VJTI Gymkhana. It is one of the largest intercollegiate sports festivals in Maharashtra and India. Engineering and medical colleges from Mumbai and Maharashtra participate in the two-week-long sporting event.</p>
+                            <a href="https://www.facebook.com/enthusia.vjti/" class="btn academy-btn btn-sm">See More</a>
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url({% static 'img/bg-img/pc-3.jpg' %});"></div>
+                    </div>
+                </div>
+
+                <!-- Single Top Popular Course -->
+                <div class="col-12 col-lg-6">
+                    <div class="single-top-popular-course d-flex align-items-center flex-wrap mb-30 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="popular-course-content">
+                            <h5>Rangawardhan</h5>
+                            <span>Marathi Folk Committee</span>
+                            <p>Rangawardhan is a four-day Annual Marathi cultural fest dedicated to promoting Marathi drama, literature, music and other art forms. It conducts performances, exhibitions, seminars and competitions during Pratibimb and its own standalone events. It stages dramatics and music performances at college functions.
+</p>
+                            <a href="https://www.facebook.com/events/veermata-jijabai-technological-institute/rangawardhan-vjti-mumbai-/870749053039700/" class="btn academy-btn btn-sm">See More</a>
+                        </div>
+                        <div class="popular-course-thumb bg-img" style="background-image: url({% static 'img/bg-img/pc-4.jpg' %});"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Top Popular Courses Area End ##### -->
+{% endblock %}
+</body>
+</html>
